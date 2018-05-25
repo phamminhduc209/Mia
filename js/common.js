@@ -17,7 +17,7 @@
   $(document).ready(function() {
     $(".owl-carousel").each(function(index, el) {
       var config = $(this).data();
-      config.navText = ['<i class="icofont icofont-thin-left"></i>','<i class="icofont icofont-thin-right"></i>'];
+      config.navText = ['<img src="images/prev.svg" />','<img src="images/next.svg" />'];
       config.smartSpeed="800";
      
       if($(this).hasClass('owl-style2')){
