@@ -33,7 +33,9 @@
 		<header id="header" class="header">
 			<div class="container">
 				<div class="col-sm-4 col-xs-6 block-logo">
-					<h1 class="header-logo">MIAHOME</h1>
+					<h1 class="header-logo">
+						<a href="index.html" title="MIAHOME">MIAHOME</a>
+					</h1>
 				</div>
 				<div class="col-sm-8 col-xs-6 block-menu">
 					<ul>
@@ -50,7 +52,7 @@
 							<a href="blog.html">Blog</a>
 						</li>
 						<li>
-							<a href="contactus.html">Contact Us</a>
+							<a href="contact-us.html">Contact Us</a>
 						</li>
 					</ul>
 				</div>
@@ -90,18 +92,21 @@
 
 		<section class="block-check">
 			<div class="container">
-				<div class="block-content">
+				<div class="block-content block-form-date">
 					<div class="row">
-						<div class="col-sm-3">
+						<div class="col-sm-3 col-xs-12 item">
 							<p class="title">CHECK-IN</p>
 							<div class="">
-								
+								<input type='text' class="form-control form-date" id='datetimepicker4' placeholder="Select arrival date" />
 							</div>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-sm-3 col-xs-12 item">
 							<p class="title">CHECK-OUT</p>
+							<div class="">
+								<input type='text' class="form-control form-date" id='datetimepicker5' placeholder="Select departure date" />
+							</div>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-sm-3 col-xs-12 item">
 							<p class="title">PERSON</p>
 							<div class="">
 								<select name="checkin">
@@ -122,7 +127,7 @@
 								</select>
 							</div>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-sm-3 col-xs-12 item">
 							<button type="button" class="btn btn-primary">CHECK AVAILABLE</button>
 						</div>
 					</div>

@@ -63,16 +63,52 @@
 					<div class="col-sm-8 col-xs-12">
 						<div class="block-image">
 							<div class="block-large">
-								<img src="images/detail/large/1.jpg" alt="">
+								<div class="bxslider product-img-gallery">
+	                                <div class="item">
+	                                    <img src="images/detail/large/1.jpg" alt="">
+	                                </div>
+	                                <div class="item">
+	                                    <img src="images/detail/large/1.jpg" alt="">
+	                                </div>
+	                                <div class="item">
+	                                    <img src="images/detail/large/1.jpg" alt="">
+	                                </div>
+	                                <div class="item">
+	                                    <img src="images/detail/large/1.jpg" alt="">
+	                                </div>
+	                                <div class="item">
+	                                    <img src="images/detail/large/1.jpg" alt="">
+	                                </div>
+	                            </div>
 							</div>
 							<div class="block-thumb">
-								<ul>
-									<li><img src="images/detail/thumb/1.jpg" alt=""></li>
-									<li><img src="images/detail/thumb/2.jpg" alt=""></li>
-									<li><img src="images/detail/thumb/3.jpg" alt=""></li>
-									<li><img src="images/detail/thumb/4.jpg" alt=""></li>
-									<li><img src="images/detail/thumb/5.jpg" alt=""></li>
-								</ul>
+								<div id="gallery_01" class="pro-thumb-img">
+                                    <div class="item">
+                                        <a href="#" data-slide-index="0">
+                                           <img src="images/detail/thumb/1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#" data-slide-index="1">
+                                            <img src="images/detail/thumb/2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#" data-slide-index="2">
+                                            <img src="images/detail/thumb/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#" data-slide-index="3">
+                                            <img src="images/detail/thumb/4.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#" data-slide-index="4">
+                                            <img src="images/detail/thumb/5.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
 							</div>
 						</div><!-- /.block-image -->
 						<div class="block-grand">
@@ -153,52 +189,90 @@
 						<div class="block-check-detail">
 							<form action="" method="" class="">
 								<div class="form-group">
-									<label for="Checkin">Check in</label>
-								</div>
-								<div class="form-group">
-									<label for="Checkout">Check out</label>
-								</div>
-								<div class="row">
-									<div class="col-sm-6 col-xs-12">
-										<div class="form-group">
-											<label for="Adult">Adult</label>
-											
+										<label for="Checkin">Check in</label>
+										<input type='text' class="form-control form-date" id='datetimepicker4' placeholder="Select arrival date" />
+									</div>
+									<div class="form-group">
+										<label for="Checkout">Check out</label>
+										<input type='text' class="form-control form-date" id='datetimepicker5' placeholder="Select departure date" />
+									</div>
+									<div class="row">
+										<div class="col-sm-6 col-xs-12">
+											<div class="form-group">
+												<label for="Adult">Adult</label>
+												<div>
+													<select name="Adult">
+														<option value="" disabled selected>Select</option>
+														<option value="01">01</option>
+														<option value="02">02</option>
+														<option value="03">03</option>
+														<option value="04">04</option>
+														<option value="05">05</option>
+														<option value="06">06</option>
+														<option value="07">07</option>
+														<option value="08">08</option>
+														<option value="09">09</option>
+														<option value="10">10</option>
+														<option value="11">11</option>
+														<option value="12">12</option>
+														<option value="13">13</option>
+														<option value="14">14</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-xs-12">
+											<div class="form-group">
+												<label for="Children">Children</label>
+												<div>
+													<select name="Children">
+														<option value="" disabled selected>Select</option>
+														<option value="01">01</option>
+														<option value="02">02</option>
+														<option value="03">03</option>
+														<option value="04">04</option>
+														<option value="05">05</option>
+														<option value="06">06</option>
+														<option value="07">07</option>
+														<option value="08">08</option>
+														<option value="09">09</option>
+														<option value="10">10</option>
+														<option value="11">11</option>
+														<option value="12">12</option>
+														<option value="13">13</option>
+														<option value="14">14</option>
+													</select>
+												</div>
+											</div>
 										</div>
 									</div>
-									<div class="col-sm-6 col-xs-12">
-										<div class="form-group">
-											<label for="Children">Children</label>
-											
-										</div>
-									</div>
-								</div>
 								<div class="form-group block-order-summary">
 									<ul>
 										<li>
-						                    <p class="k">$41 x 10 nights</p>
-						                    <p id="order-quantity" class="v">$410</p>
+						                    <div class="k">$41 x 10 nights</div>
+						                    <div id="order-quantity" class="v">$410</div>
 						                </li>
-						                <li>
-						                    <p class="k">
-						                    	<label>
-						                    		<input type="checkbox" name="Cleaning-fee" value="">
-						                    		<span>Cleaning fee</span>
-						                    	</label>
-						                    </p>
-						                    <p id="order-quantity" class="v">+$20</p>
+						                <li class="checkbox_item">
+						                    <div class="k">
+						                    	<p>
+						                    		<input type="checkbox" id="Cleaning-fee" name="Cleaning-fee" />
+    												<label for="Cleaning-fee">Cleaning fee</label>
+						                    	</p>
+						                    </div>
+						                    <div id="order-quantity" class="v">+$20</div>
 						                </li>
-						                <li>
-						                    <p class="k">
-						                    	<label>
-						                    		<input type="checkbox" name="Airport-pick-up" value="">
-						                    		<span>Airport pick-up</span>
-						                    	</label>
-						                    </p>
-						                    <p id="order-quantity" class="v">+$10</p>
+						                <li class="checkbox_item">
+						                    <div class="k">
+						                    	<p>
+						                    		<input type="checkbox" name="Airport-pick-up" id="Airport-pick-up" />
+    												<label for="Airport-pick-up">Airport pick-up</label>
+						                    	</p>
+						                    </div>
+						                    <div id="order-quantity" class="v">+$10</div>
 						                </li>
 						                <li class="total">
-						                    <p class="k">Tổng cộng</p>
-						                    <p id="order-total" class="v">$410</p>
+						                    <div class="k">Tổng cộng</div>
+						                    <div id="order-total" class="v">$410</div>
 						                </li>
 									</ul>
 								</div>
@@ -264,10 +338,73 @@
 	<!-- ===== JS ===== -->
 	<script src="js/jquery.min.js"></script>
 	<!-- ===== JS Bootstrap ===== -->
+	<script src="js/moment.js"></script>
+	<!-- ===== JS Bootstrap ===== -->
 	<script src="lib/bootstrap/bootstrap.min.js"></script>
-	<!-- ===== JS Wow ===== -->
+	<!-- ===== JS Owl ===== -->
+	<script src="lib/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+	<!-- ===== JS Owl ===== -->
 	<script src="lib/owl/owl.carousel.min.js"></script>
+	<!-- ===== JS Owl ===== -->
+	<script src="lib/bxslider/js/jquery.bxslider.js"></script>
     <!-- Js Common -->
 	<script src="js/common.js"></script>
+	<script type="text/javascript">
+        $(function () {
+            $('#datetimepicker4').datetimepicker({
+            	format: 'DD/MM/YYYY',
+            });
+        });
+        $(function () {
+            $('#datetimepicker5').datetimepicker({
+            	format: 'DD/MM/YYYY',
+            	useCurrent: false //Important! See issue #1075
+            });
+        });
+        $("#datetimepicker4").on("dp.change", function (e) {
+            $('#datetimepicker5').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker5").on("dp.change", function (e) {
+            $('#datetimepicker4').data("DateTimePicker").maxDate(e.date);
+        });
+        $(document).ready(function () {
+            $(".bxslider").bxSlider({
+                pagerCustom: '.pro-thumb-img',
+                nextText: '<img src="images/ic-next.svg" />',
+                prevText: '<img src="images/ic-back.svg" />'
+            });
+            $(".pro-thumb-img").bxSlider({
+                slideMargin: 0,
+                maxSlides: 5,
+                pager: false,
+                controls: false,
+                slideWidth: 150,
+                infiniteLoop: false
+            });
+        });
+		//	if($('input[name="Cleaning-fee"]').is(':checked')) {
+		// 	$(this).parents('.checkbox_item').addClass('active');
+		// } else {
+		// 	$(this).parents('.checkbox_item').removeClass('active');
+		// }
+		var check1;
+		$("#Cleaning-fee").on("click", function(){
+			check1 = $("#Cleaning-fee").prop("checked");
+			if(check1) {
+			 	$(this).parents('.checkbox_item').addClass('active');
+			} else {
+				$(this).parents('.checkbox_item').removeClass('active');
+			}
+		});
+		var check2;
+		$("#Airport-pick-up").on("click", function(){
+			check2 = $("#Airport-pick-up").prop("checked");
+			if(check2) {
+			 	$(this).parents('.checkbox_item').addClass('active');
+			} else {
+				$(this).parents('.checkbox_item').removeClass('active');
+			}
+		});
+    </script>
 </body>
 </html>
