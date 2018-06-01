@@ -2,11 +2,6 @@
  * ---------------------------------------------------
  * 1. 
  * 2. 
- * 3. 
- * 4. 
- * 5. 
- * 6. 
- * 7. 
  */
 
   (function($){
@@ -19,19 +14,22 @@
       var config = $(this).data();
       config.navText = ['<img src="images/prev.svg" />','<img src="images/next.svg" />'];
       config.smartSpeed="800";
-     
       if($(this).hasClass('owl-style2')){
         config.animateOut="fadeOut";
         config.animateIn="fadeIn";    
       }
-
       if($(this).hasClass('dotsData')){
         config.dotsData="true";
       }
-      
       $(this).owlCarousel(config);
     });
+  });
 
+  // Menu mobile
+  $(document).ready(function() {
+    $("header .navbar-toggle").on('click', function() {
+      $('.block-menu').toggle('slow/1000')
+    });
   });
 
 })(jQuery); // End of use strict

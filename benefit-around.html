@@ -18,6 +18,7 @@
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
 	<!-- ===== Style CSS ===== -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
   	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,23 +30,29 @@
 </head>
 <body>
 	<div class="wrapper">
-
+		
 		<header id="header" class="header">
 			<div class="container">
 				<div class="col-sm-4 col-xs-6 block-logo">
 					<h1 class="header-logo">
 						<a href="index.html" title="MIAHOME">MIAHOME</a>
 					</h1>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+		                <span class="sr-only">Toggle navigation</span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		            </button>
 				</div>
 				<div class="col-sm-8 col-xs-6 block-menu">
 					<ul>
-						<li class="active">
+						<li>
 							<a href="index.html">Home</a>
 						</li>
 						<li>
 							<a href="room.html">Room</a>
 						</li>
-						<li>
+						<li class="active">
 							<a href="ourservices.html">Our Services</a>
 						</li>
 						<li>
@@ -94,41 +101,49 @@
 			<div class="container">
 				<div class="block-content block-form-date">
 					<div class="row">
-						<div class="col-sm-3 col-xs-12 item">
-							<p class="title">CHECK-IN</p>
-							<div class="">
-								<input type='text' class="form-control form-date" id='datetimepicker4' placeholder="Select arrival date" />
+						<div class="col-sm-3 col-xs-6 item">
+							<div>
+								<p class="title">CHECK-IN</p>
+								<div>
+									<input type='text' class="form-control form-date" id='datetimepicker4' placeholder="Select arrival date" />
+								</div>
 							</div>
 						</div>
-						<div class="col-sm-3 col-xs-12 item">
-							<p class="title">CHECK-OUT</p>
-							<div class="">
-								<input type='text' class="form-control form-date" id='datetimepicker5' placeholder="Select departure date" />
+						<div class="col-sm-3 col-xs-6 item">
+							<div>
+								<p class="title">CHECK-OUT</p>
+								<div>
+									<input type='text' class="form-control form-date" id='datetimepicker5' placeholder="Select departure date" />
+								</div>
 							</div>
 						</div>
-						<div class="col-sm-3 col-xs-12 item">
-							<p class="title">PERSON</p>
-							<div class="">
-								<select name="checkin">
-									<option value="01">01</option>
-									<option value="02" selected="selected">02</option>
-									<option value="03">03</option>
-									<option value="04">04</option>
-									<option value="05">05</option>
-									<option value="06">06</option>
-									<option value="07">07</option>
-									<option value="08">08</option>
-									<option value="09">09</option>
-									<option value="10">10</option>
-									<option value="11">11</option>
-									<option value="12">12</option>
-									<option value="13">13</option>
-									<option value="14">14</option>
-								</select>
+						<div class="col-sm-3 col-xs-6 item">
+							<div>
+								<p class="title">PERSON</p>
+								<div>
+									<select name="checkin">
+										<option value="01">01</option>
+										<option value="02" selected="selected">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+										<option value="07">07</option>
+										<option value="08">08</option>
+										<option value="09">09</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+									</select>
+								</div>
 							</div>
 						</div>
-						<div class="col-sm-3 col-xs-12 item">
-							<button type="button" class="btn btn-primary">CHECK AVAILABLE</button>
+						<div class="col-sm-3 col-xs-6 item">
+							<div>
+								<button type="button" class="btn btn-primary">CHECK AVAILABLE</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -144,7 +159,7 @@
 			</div>
 			<div class="block-benefit-around row">
 				<ul class="items">
-					<li class="col-sm-3 col-xs-12">
+					<li class="col-sm-3 col-xs-6">
 						<div class="item">
 							<div class="img">
 								<img src="images/benefit-around/1.jpg" alt="">
@@ -156,7 +171,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="col-sm-3 col-xs-12">
+					<li class="col-sm-3 col-xs-6">
 						<div class="item">
 							<div class="img">
 								<img src="images/benefit-around/2.jpg" alt="">
@@ -168,7 +183,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="col-sm-3 col-xs-12">
+					<li class="col-sm-3 col-xs-6">
 						<div class="item">
 							<div class="img">
 								<img src="images/benefit-around/3.jpg" alt="">
@@ -180,7 +195,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="col-sm-3 col-xs-12">
+					<li class="col-sm-3 col-xs-6">
 						<div class="item">
 							<div class="img">
 								<img src="images/benefit-around/4.jpg" alt="">
@@ -235,7 +250,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 col-xs-12">
-						<p class="header-logo">Miahome</p>
+						<p class="header-logo">
+							<a href="index.html" title="Miahome">Miahome</a>
+						</p>
 						<p class="ft-description">
 							Det er en kendsgerning, at man bliver distraheret af læsbart indhold på en side, når man betragter dens layout. Meningen med at bruge Lorem Ipsum,
 						</p>

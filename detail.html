@@ -18,6 +18,7 @@
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
 	<!-- ===== Style CSS ===== -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
   	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,31 +31,39 @@
 <body>
 	<div class="wrapper">
 
-		<header id="header" class="header header-shadow">
+		<header id="header" class="header">
 			<div class="container">
-				<div class="col-sm-4 col-xs-6 block-logo">
-					<h1 class="header-logo">
-						<a href="index.html" title="MIAHOME">MIAHOME</a>
-					</h1>
-				</div>
-				<div class="col-sm-8 col-xs-6 block-menu">
-					<ul>
-						<li class="active">
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="room.html">Room</a>
-						</li>
-						<li>
-							<a href="ourservices.html">Our Services</a>
-						</li>
-						<li>
-							<a href="blog.html">Blog</a>
-						</li>
-						<li>
-							<a href="contact-us.html">Contact Us</a>
-						</li>
-					</ul>
+				<div class="row">
+					<div class="col-sm-4 col-xs-12 block-logo">
+						<h1 class="header-logo">
+							<a href="index.html" title="MIAHOME">MIAHOME</a>
+						</h1>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+			                <span class="sr-only">Toggle navigation</span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			            </button>
+					</div>
+					<div class="col-sm-8 col-xs-12 block-menu">
+						<ul class="menu">
+							<li class="active">
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="room.html">Room</a>
+							</li>
+							<li>
+								<a href="benefit-around.html">Our Services</a>
+							</li>
+							<li>
+								<a href="blog.html">Blog</a>
+							</li>
+							<li>
+								<a href="contact-us.html">Contact Us</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</header><!-- /.header -->
@@ -167,13 +176,13 @@
 						<div class="block-around-the-hotel">
 							<p class="name">Grand deluxe room</p>
 							<ul class="row">
-								<li class="col-sm-4 col-xs-12">
+								<li class="col-sm-4 col-xs-4">
 									<img src="images/aroundhotel/1.jpg" alt="">
 								</li>
-								<li class="col-sm-4 col-xs-12">
+								<li class="col-sm-4 col-xs-4">
 									<img src="images/aroundhotel/2.jpg" alt="">
 								</li>
-								<li class="col-sm-4 col-xs-12">
+								<li class="col-sm-4 col-xs-4">
 									<img src="images/aroundhotel/3.jpg" alt="">
 								</li>
 							</ul>
@@ -249,7 +258,7 @@
 											</div>
 										</div>
 									</div>
-									<button type="submit" class="btn btn-default btn-common">Check available</button>
+									<a href="detail-booking-start.html" title="Check available" class="btn btn-default btn-common">Check available</a>
 								</form>
 							</div>
 						</div>
@@ -262,7 +271,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 col-xs-12">
-						<p class="header-logo">Miahome</p>
+						<p class="header-logo">
+							<a href="index.html" title="Miahome">Miahome</a>
+						</p>
 						<p class="ft-description">
 							Det er en kendsgerning, at man bliver distraheret af læsbart indhold på en side, når man betragter dens layout. Meningen med at bruge Lorem Ipsum,
 						</p>

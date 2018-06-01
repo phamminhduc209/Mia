@@ -18,6 +18,7 @@
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
 	<!-- ===== Style CSS ===== -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
   	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,29 +31,39 @@
 <body>
 	<div class="wrapper">
 
-		<header id="header" class="header header-shadow">
+		<header id="header" class="header">
 			<div class="container">
-				<div class="col-sm-4 col-xs-6 block-logo">
-					<h1 class="header-logo">MIAHOME</h1>
-				</div>
-				<div class="col-sm-8 col-xs-6 block-menu">
-					<ul>
-						<li class="active">
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="room.html">Room</a>
-						</li>
-						<li>
-							<a href="ourservices.html">Our Services</a>
-						</li>
-						<li>
-							<a href="blog.html">Blog</a>
-						</li>
-						<li>
-							<a href="contactus.html">Contact Us</a>
-						</li>
-					</ul>
+				<div class="row">
+					<div class="col-sm-4 col-xs-12 block-logo">
+						<h1 class="header-logo">
+							<a href="index.html" title="MIAHOME">MIAHOME</a>
+						</h1>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+			                <span class="sr-only">Toggle navigation</span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			            </button>
+					</div>
+					<div class="col-sm-8 col-xs-12 block-menu">
+						<ul class="menu">
+							<li class="active">
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="room.html">Room</a>
+							</li>
+							<li>
+								<a href="benefit-around.html">Our Services</a>
+							</li>
+							<li>
+								<a href="blog.html">Blog</a>
+							</li>
+							<li>
+								<a href="contact-us.html">Contact Us</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</header><!-- /.header -->
@@ -94,22 +105,22 @@
 							                    <p class="k">$41 x 10 nights</p>
 							                    <p id="order-quantity" class="v">$410</p>
 							                </li>
-							                <li>
-							                    <p class="k">
-							                    	<label>
-							                    		<input type="checkbox" name="Cleaning-fee" value="">
-							                    		<span>Cleaning fee</span>
-							                    	</label>
-							                    </p>
+							                <li class="checkbox_item">
+							                    <div class="k">
+							                    	<p>
+							                    		<input type="checkbox" id="Cleaning-fee" name="Cleaning-fee" />
+	    												<label for="Cleaning-fee">Cleaning fee</label>
+							                    	</p>
+							                    </div>
 							                    <p id="order-quantity" class="v">+$20</p>
 							                </li>
-							                <li>
-							                    <p class="k">
-							                    	<label>
-							                    		<input type="checkbox" name="Airport-pick-up" value="">
-							                    		<span>Airport pick-up</span>
-							                    	</label>
-							                    </p>
+							                <li class="checkbox_item">
+							                    <div class="k">
+							                    	<p>
+							                    		<input type="checkbox" name="Airport-pick-up" id="Airport-pick-up" />
+	    												<label for="Airport-pick-up">Airport pick-up</label>
+							                    	</p>
+							                    </div>
 							                    <p id="order-quantity" class="v">+$10</p>
 							                </li>
 							                <li class="total">
@@ -199,7 +210,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 col-xs-12">
-						<p class="header-logo">Miahome</p>
+						<p class="header-logo">
+							<a href="index.html" title="Miahome">Miahome</a>
+						</p>
 						<p class="ft-description">
 							Det er en kendsgerning, at man bliver distraheret af læsbart indhold på en side, når man betragter dens layout. Meningen med at bruge Lorem Ipsum,
 						</p>
@@ -249,10 +262,68 @@
 	<!-- ===== JS ===== -->
 	<script src="js/jquery.min.js"></script>
 	<!-- ===== JS Bootstrap ===== -->
+	<script src="js/moment.js"></script>
+	<!-- ===== JS Bootstrap ===== -->
 	<script src="lib/bootstrap/bootstrap.min.js"></script>
-	<!-- ===== JS Wow ===== -->
+	<!-- ===== JS Owl ===== -->
+	<script src="lib/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+	<!-- ===== JS Owl ===== -->
 	<script src="lib/owl/owl.carousel.min.js"></script>
+	<!-- ===== JS Owl ===== -->
+	<script src="lib/bxslider/js/jquery.bxslider.js"></script>
     <!-- Js Common -->
 	<script src="js/common.js"></script>
+	<script type="text/javascript">
+        $(function () {
+            $('#datetimepicker4').datetimepicker({
+            	format: 'DD/MM/YYYY',
+            });
+        });
+        $(function () {
+            $('#datetimepicker5').datetimepicker({
+            	format: 'DD/MM/YYYY',
+            	useCurrent: false //Important! See issue #1075
+            });
+        });
+        $("#datetimepicker4").on("dp.change", function (e) {
+            $('#datetimepicker5').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker5").on("dp.change", function (e) {
+            $('#datetimepicker4').data("DateTimePicker").maxDate(e.date);
+        });
+        $(document).ready(function () {
+            $(".bxslider").bxSlider({
+                pagerCustom: '.pro-thumb-img',
+                nextText: '<img src="images/ic-next.svg" />',
+                prevText: '<img src="images/ic-back.svg" />'
+            });
+            $(".pro-thumb-img").bxSlider({
+                slideMargin: 0,
+                maxSlides: 5,
+                pager: false,
+                controls: false,
+                slideWidth: 150,
+                infiniteLoop: false
+            });
+        });
+		var check1;
+		$("#Cleaning-fee").on("click", function(){
+			check1 = $("#Cleaning-fee").prop("checked");
+			if(check1) {
+			 	$(this).parents('.checkbox_item').addClass('active');
+			} else {
+				$(this).parents('.checkbox_item').removeClass('active');
+			}
+		});
+		var check2;
+		$("#Airport-pick-up").on("click", function(){
+			check2 = $("#Airport-pick-up").prop("checked");
+			if(check2) {
+			 	$(this).parents('.checkbox_item').addClass('active');
+			} else {
+				$(this).parents('.checkbox_item').removeClass('active');
+			}
+		});
+    </script>
 </body>
 </html>

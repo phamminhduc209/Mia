@@ -18,6 +18,7 @@
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
 	<!-- ===== Style CSS ===== -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
   	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,29 +33,37 @@
 
 		<header id="header" class="header">
 			<div class="container">
-				<div class="col-sm-4 col-xs-6 block-logo">
-					<h1 class="header-logo">
-						<a href="index.html" title="MIAHOME">MIAHOME</a>
-					</h1>
-				</div>
-				<div class="col-sm-8 col-xs-6 block-menu">
-					<ul>
-						<li class="active">
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="room.html">Room</a>
-						</li>
-						<li>
-							<a href="ourservices.html">Our Services</a>
-						</li>
-						<li>
-							<a href="blog.html">Blog</a>
-						</li>
-						<li>
-							<a href="contact-us.html">Contact Us</a>
-						</li>
-					</ul>
+				<div class="row">
+					<div class="col-sm-4 col-xs-12 block-logo">
+						<h1 class="header-logo">
+							<a href="index.html" title="MIAHOME">MIAHOME</a>
+						</h1>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+			                <span class="sr-only">Toggle navigation</span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			            </button>
+					</div>
+					<div class="col-sm-8 col-xs-12 block-menu">
+						<ul class="menu">
+							<li class="active">
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="room.html">Room</a>
+							</li>
+							<li>
+								<a href="benefit-around.html">Our Services</a>
+							</li>
+							<li>
+								<a href="blog.html">Blog</a>
+							</li>
+							<li>
+								<a href="contact-us.html">Contact Us</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</header><!-- /.header -->
@@ -94,41 +103,49 @@
 			<div class="container">
 				<div class="block-content block-form-date">
 					<div class="row">
-						<div class="col-sm-3 col-xs-12 item">
-							<p class="title">CHECK-IN</p>
-							<div class="">
-								<input type='text' class="form-control form-date" id='datetimepicker4' placeholder="Select arrival date" />
+						<div class="col-sm-3 col-xs-6 item">
+							<div>
+								<p class="title">CHECK-IN</p>
+								<div>
+									<input type='text' class="form-control form-date" id='datetimepicker4' placeholder="Select arrival date" />
+								</div>
 							</div>
 						</div>
-						<div class="col-sm-3 col-xs-12 item">
-							<p class="title">CHECK-OUT</p>
-							<div class="">
-								<input type='text' class="form-control form-date" id='datetimepicker5' placeholder="Select departure date" />
+						<div class="col-sm-3 col-xs-6 item">
+							<div>
+								<p class="title">CHECK-OUT</p>
+								<div>
+									<input type='text' class="form-control form-date" id='datetimepicker5' placeholder="Select departure date" />
+								</div>
 							</div>
 						</div>
-						<div class="col-sm-3 col-xs-12 item">
-							<p class="title">PERSON</p>
-							<div class="">
-								<select name="checkin">
-									<option value="01">01</option>
-									<option value="02" selected="selected">02</option>
-									<option value="03">03</option>
-									<option value="04">04</option>
-									<option value="05">05</option>
-									<option value="06">06</option>
-									<option value="07">07</option>
-									<option value="08">08</option>
-									<option value="09">09</option>
-									<option value="10">10</option>
-									<option value="11">11</option>
-									<option value="12">12</option>
-									<option value="13">13</option>
-									<option value="14">14</option>
-								</select>
+						<div class="col-sm-3 col-xs-6 item">
+							<div>
+								<p class="title">PERSON</p>
+								<div>
+									<select name="checkin">
+										<option value="01">01</option>
+										<option value="02" selected="selected">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+										<option value="07">07</option>
+										<option value="08">08</option>
+										<option value="09">09</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+									</select>
+								</div>
 							</div>
 						</div>
-						<div class="col-sm-3 col-xs-12 item">
-							<button type="button" class="btn btn-primary">CHECK AVAILABLE</button>
+						<div class="col-sm-3 col-xs-6 item">
+							<div>
+								<button type="button" class="btn btn-primary">CHECK AVAILABLE</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -136,11 +153,11 @@
 		</section><!-- /.block-check -->
 
 		<section class="block-product block-product-home">
-			<ul class="owl-carousel owl-theme owl-style2" data-nav="true" data-dots="false" data-margin="0" data-responsive='{"0":{"items":1},"480":{"items":2},"600":{"items":2},"768":{"items":3},"800":{"items":3},"992":{"items":6}}' data-center="true" data-loop="true" data-autoplayTimeout="100" data-autoplay="false">
+			<ul class="owl-carousel owl-theme" data-nav="true" data-dots="false" data-margin="0" data-responsive='{"320":{"items":1},"480":{"items":3},"600":{"items":4},"768":{"items":4},"800":{"items":3},"992":{"items":6}}' data-center="true" data-loop="true" data-autoplayTimeout="700" data-autoplay="false">
 				<li class="item">
 					<div class="block-img">
-						<a href="" alt="">
-							<img src="images/recommend/recommend1.jpg" alt="">
+						<a href="detail.html" alt="">
+							<img src="images/product/BitmapNormal.png" alt="">
 						</a>
 					</div>
 					<div class="block-txt">
@@ -150,8 +167,8 @@
 				</li>
 				<li class="item">
 					<div class="block-img">
-						<a href="" alt="">
-							<img src="images/recommend/recommend2.jpg" alt="">
+						<a href="detail.html" alt="">
+							<img src="images/product/BitmapNormal.png" alt="">
 						</a>
 					</div>
 					<div class="block-txt">
@@ -161,8 +178,8 @@
 				</li>
 				<li class="item">
 					<div class="block-img">
-						<a href="" alt="">
-							<img src="images/recommend/recommend3.jpg" alt="">
+						<a href="detail.html" alt="">
+							<img src="images/product/BitmapNormal.png" alt="">
 						</a>
 					</div>
 					<div class="block-txt">
@@ -172,8 +189,8 @@
 				</li>
 				<li class="item">
 					<div class="block-img">
-						<a href="" alt="">
-							<img src="images/recommend/recommend4.jpg" alt="">
+						<a href="detail.html" alt="">
+							<img src="images/product/BitmapNormal.png" alt="">
 						</a>
 					</div>
 					<div class="block-txt">
@@ -183,8 +200,8 @@
 				</li>
 				<li class="item">
 					<div class="block-img">
-						<a href="" alt="">
-							<img src="images/recommend/recommend1.jpg" alt="">
+						<a href="detail.html" alt="">
+							<img src="images/product/BitmapNormal.png" alt="">
 						</a>
 					</div>
 					<div class="block-txt">
@@ -194,8 +211,8 @@
 				</li>
 				<li class="item">
 					<div class="block-img">
-						<a href="" alt="">
-							<img src="images/recommend/recommend2.jpg" alt="">
+						<a href="detail.html" alt="">
+							<img src="images/product/BitmapNormal.png" alt="">
 						</a>
 					</div>
 					<div class="block-txt">
@@ -205,8 +222,8 @@
 				</li>
 				<li class="item">
 					<div class="block-img">
-						<a href="" alt="">
-							<img src="images/recommend/recommend3.jpg" alt="">
+						<a href="detail.html" alt="">
+							<img src="images/product/BitmapNormal.png" alt="">
 						</a>
 					</div>
 					<div class="block-txt">
@@ -216,8 +233,8 @@
 				</li>
 				<li class="item">
 					<div class="block-img">
-						<a href="" alt="">
-							<img src="images/recommend/recommend4.jpg" alt="">
+						<a href="detail.html" alt="">
+							<img src="images/product/BitmapNormal.png" alt="">
 						</a>
 					</div>
 					<div class="block-txt">
@@ -233,14 +250,12 @@
 				<h2 class="block-title block-title-style1">ABOUT US</h2>
 				<div class="block-content">
 					<div class="row">
-						<div class="col-sm-5 col-xs-12">
-							<div class="block-txt">
-								<div class="box-table">
-									<div class="box-td">
-										<p class="txt">Hi there!</p>
-										<p class="des">Commenced its first business in 2015, Mia Apartment has defined itself as a premium range of apartment services. Locating in Ho Chi Minh City, We dedicates to offers its customers the excellent accommodation and the change to involve in city’s activities.  Modern facilities and outstanding customer services are our commitments to bring to the post.</p>
-										<p class="button"><button type="button" class="btn btn-primary">SEE MORE</button></p>
-									</div>
+						<div class="col-sm-5 col-xs-12 block-txt">
+							<div class="box-table">
+								<div class="box-td">
+									<p class="txt">Hi there!</p>
+									<p class="des">Commenced its first business in 2015, Mia Apartment has defined itself as a premium range of apartment services. Locating in Ho Chi Minh City, We dedicates to offers its customers the excellent accommodation and the change to involve in city’s activities.  Modern facilities and outstanding customer services are our commitments to bring to the post.</p>
+									<p class="button"><button type="button" class="btn btn-primary">SEE MORE</button></p>
 								</div>
 							</div>
 						</div>
@@ -271,7 +286,7 @@
 								<div class="box-td">
 									<h3 class="name">MIA</h3>
 									<p class="title">(Founder)</p>
-									<p class="description">Mia is a young lady who is known as a reliable host in Agoda. Being<br>inspired by modern lifestyle and elegant decoration, Mia fills all her<br>apartments with young and urban essence. Travelling addicted and<br>passionate in hospitality, Mia has so much thing to share with her beloved<br>visitors. Let’s be her visitors, be her friends. You will be welcomed and<br>supported during your stay. </p>
+									<p class="description">Mia is a young lady who is known as a reliable host in Agoda. Being inspired by modern lifestyle and elegant decoration, Mia fills all her apartments with young and urban essence. Travelling addicted and passionate in hospitality, Mia has so much thing to share with her beloved visitors. Let’s be her visitors, be her friends. You will be welcomed and supported during your stay. </p>
 								</div>
 							</div>
 						</div>
@@ -315,7 +330,7 @@
 				<ul class="owl-carousel owl-theme owl-style2" data-nav="true" data-dots="false" data-margin="30" data-responsive='{"0":{"items":1},"480":{"items":2},"600":{"items":2},"768":{"items":3},"800":{"items":3},"992":{"items":4}}'>
 					<li class="item">
 						<div class="block-img">
-							<a href="" alt="">
+							<a href="detail.html" alt="">
 								<img src="images/recommend/recommend1.jpg" alt="">
 							</a>
 						</div>
@@ -328,7 +343,7 @@
 					</li>
 					<li class="item">
 						<div class="block-img">
-							<a href="" alt="">
+							<a href="detail.html" alt="">
 								<img src="images/recommend/recommend2.jpg" alt="">
 							</a>
 						</div>
@@ -341,7 +356,7 @@
 					</li>
 					<li class="item">
 						<div class="block-img">
-							<a href="" alt="">
+							<a href="detail.html" alt="">
 								<img src="images/recommend/recommend3.jpg" alt="">
 							</a>
 						</div>
@@ -354,7 +369,7 @@
 					</li>
 					<li class="item">
 						<div class="block-img">
-							<a href="" alt="">
+							<a href="detail.html" alt="">
 								<img src="images/recommend/recommend4.jpg" alt="">
 							</a>
 						</div>
@@ -367,7 +382,7 @@
 					</li>
 					<li class="item">
 						<div class="block-img">
-							<a href="" alt="">
+							<a href="detail.html" alt="">
 								<img src="images/recommend/recommend1.jpg" alt="">
 							</a>
 						</div>
@@ -380,7 +395,7 @@
 					</li>
 					<li class="item">
 						<div class="block-img">
-							<a href="" alt="">
+							<a href="detail.html" alt="">
 								<img src="images/recommend/recommend2.jpg" alt="">
 							</a>
 						</div>
@@ -393,7 +408,7 @@
 					</li>
 					<li class="item">
 						<div class="block-img">
-							<a href="" alt="">
+							<a href="detail.html" alt="">
 								<img src="images/recommend/recommend3.jpg" alt="">
 							</a>
 						</div>
@@ -406,7 +421,7 @@
 					</li>
 					<li class="item">
 						<div class="block-img">
-							<a href="" alt="">
+							<a href="detail.html" alt="">
 								<img src="images/recommend/recommend4.jpg" alt="">
 							</a>
 						</div>
@@ -425,22 +440,22 @@
 			<div class="container">
 				<h2 class="block-title block-title-style1">OUR PARTNER</h2>
 				<div class="block-content row">
-					<div class="col-sm-3 col-xs-12">
+					<div class="col-sm-3 col-xs-3">
 						<P class="text-center">
 							<img src="images/airbnb.png" alt="">
 						</P>
 					</div>
-					<div class="col-sm-3 col-xs-12">
+					<div class="col-sm-3 col-xs-3">
 						<P class="text-center">
 							<img src="images/agoda.png" alt="">
 						</P>
 					</div>
-					<div class="col-sm-3 col-xs-12">
+					<div class="col-sm-3 col-xs-3">
 						<P class="text-center">
 							<img src="images/traveloka.png" alt="">
 						</P>
 					</div>
-					<div class="col-sm-3 col-xs-12">
+					<div class="col-sm-3 col-xs-3">
 						<P class="text-center">
 							<img src="images/booking.png" alt="">
 						</P>
@@ -453,7 +468,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 col-xs-12">
-						<p class="header-logo">Miahome</p>
+						<p class="header-logo">
+							<a href="index.html" title="Miahome">Miahome</a>
+						</p>
 						<p class="ft-description">
 							Det er en kendsgerning, at man bliver distraheret af læsbart indhold på en side, når man betragter dens layout. Meningen med at bruge Lorem Ipsum,
 						</p>

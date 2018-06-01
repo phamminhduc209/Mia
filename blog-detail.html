@@ -18,6 +18,7 @@
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
 	<!-- ===== Style CSS ===== -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
   	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,29 +31,39 @@
 <body>
 	<div class="wrapper">
 
-		<header id="header" class="header header-shadow">
+		<header id="header" class="header">
 			<div class="container">
-				<div class="col-sm-4 col-xs-6 block-logo">
-					<h1 class="header-logo">MIAHOME</h1>
-				</div>
-				<div class="col-sm-8 col-xs-6 block-menu">
-					<ul>
-						<li class="active">
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="room.html">Room</a>
-						</li>
-						<li>
-							<a href="ourservices.html">Our Services</a>
-						</li>
-						<li>
-							<a href="blog.html">Blog</a>
-						</li>
-						<li>
-							<a href="contactus.html">Contact Us</a>
-						</li>
-					</ul>
+				<div class="row">
+					<div class="col-sm-4 col-xs-12 block-logo">
+						<h1 class="header-logo">
+							<a href="index.html" title="MIAHOME">MIAHOME</a>
+						</h1>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+			                <span class="sr-only">Toggle navigation</span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			            </button>
+					</div>
+					<div class="col-sm-8 col-xs-12 block-menu">
+						<ul class="menu">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="room.html">Room</a>
+							</li>
+							<li>
+								<a href="benefit-around.html">Our Services</a>
+							</li>
+							<li class="active">
+								<a href="blog.html">Blog</a>
+							</li>
+							<li>
+								<a href="contact-us.html">Contact Us</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</header><!-- /.header -->
@@ -88,11 +99,11 @@
 					</div><!-- /.block-blog-detail -->
 					<div class="block-tags">
 						<div class="row">
-							<div class="col-sm-8">
+							<div class="col-sm-8 col-xs-12 block-tag">
 								<span><i class="fa fa-tags" aria-hidden="true"></i></span>
 								<span>model, photography, portrait, travel</span>
 							</div>
-							<div class="col-sm-4">
+							<div class="col-sm-4 col-xs-12 block-social">
 								<span>SHARE:</span>
 								<ul class="social">
 									<li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -159,19 +170,19 @@
 						<ul class="block-content">
 							<li class="item">
 								<img src="images/blog-detail/1.png" alt="">
-								<a href="#" title="Yellow and Gray">Beauty of Nature</a>
+								<a href="blog-detail.html" title="Yellow and Gray">Beauty of Nature</a>
 							</li>
 							<li class="item">
 								<img src="images/blog-detail/2.png" alt="">
-								<a href="#" title="Yellow and Gray">Yellow and Gray</a>
+								<a href="blog-detail.html" title="Yellow and Gray">Yellow and Gray</a>
 							</li>
 							<li class="item">
 								<img src="images/blog-detail/3.png" alt="">
-								<a href="#" title="Yellow and Gray">Most Beautiful Days in Sai Gon</a>
+								<a href="blog-detail.html" title="Yellow and Gray">Most Beautiful Days in Sai Gon</a>
 							</li>
 							<li class="item">
 								<img src="images/blog-detail/4.png" alt="">
-								<a href="#" title="Yellow and Gray">Ride with us</a>
+								<a href="blog-detail.html" title="Yellow and Gray">Ride with us</a>
 							</li>
 						</ul>
 					</div>
@@ -183,7 +194,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 col-xs-12">
-						<p class="header-logo">Miahome</p>
+						<p class="header-logo">
+							<a href="index.html" title="Miahome">Miahome</a>
+						</p>
 						<p class="ft-description">
 							Det er en kendsgerning, at man bliver distraheret af læsbart indhold på en side, når man betragter dens layout. Meningen med at bruge Lorem Ipsum,
 						</p>
